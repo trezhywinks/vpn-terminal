@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+cd /root/vpn-terminal || { echo "Failed to enter the directory => /root/vpn-terminal"; exit 1; }
+
+vpn(){
+  case "$1" in
+    "--start")
+      sudo bash bash.sh 
+      ;;
+    *)
+      echo "Erro! Unknown command: $1"
+      exit 1
+      ;;
+  esac
+}
+
+
+vpn "$@"
