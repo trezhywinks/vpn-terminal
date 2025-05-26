@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cp -r vpn/vpn /bin/
+
 RED="$(printf '\033[31m')"  WHITE="$(printf '\033[37m')"
 ORG="$(printf '\e[1;93m Werbot Ver : 1.0')" MAGENTA="$(printf '\033[35m')" 
 REF="$(printf ' \e[1;37m\n')" BLACK="$(printf '\033[30m')"
